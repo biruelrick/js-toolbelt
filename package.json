@@ -1,0 +1,25 @@
+{
+  "name": "js-toolbelt",
+  "version": "0.0.1",
+  "description": "Day by day JavaScript's Common Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbiruel/js-toolbelt.git"
+  },
+  "keywords": [
+    "javascript",
+    "common",
+    "functions",
+    "library"
+  ],
+  "author": "Ricardo Biruel <biruel@infodesk.com.br> (http://www.biruel.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbiruel/js-toolbelt/issues"
+  },
+  "homepage": "https://github.com/rbiruel/js-toolbelt#readme"
+}
