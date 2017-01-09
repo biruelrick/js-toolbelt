@@ -1,2 +1,2 @@
 # js-toolbelt
-Day by day Javascript common functions
+Day by day Javascript's common functions
