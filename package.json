@@ -21,5 +21,7 @@
   "bugs": {
     "url": "https://github.com/rbiruel/js-toolbelt/issues"
   },
-  "homepage": "https://github.com/rbiruel/js-toolbelt#readme"
+  "homepage": "https://github.com/rbiruel/js-toolbelt#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
