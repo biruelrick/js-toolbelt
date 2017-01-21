@@ -1,6 +1,6 @@
 {
   "name": "js-toolbelt",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Day by day JavaScript's Common Functions",
   "main": "index.js",
   "scripts": {
