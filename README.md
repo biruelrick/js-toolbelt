@@ -1,5 +1,10 @@
 # js-toolbelt
 
+[![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/js-toolbelt)
+[![Github Releases](https://img.shields.io/github/downloads/atom/atom/latest/total.svg?style=flat-square)](https://github.com/rbiruel/js-toolbelt)
+[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow&style=flat-square)](https://twitter.com/RicardoBiruel)
+
+
 js-toolbelt.js Is a basic javascript library to help us with day-to-day development for do not waste time
 with small tasks, do us wasting time researching books, google and filling our code with unnecessary lines.
 
@@ -13,7 +18,7 @@ $ npm install js-toolbelt --save
 ## Usage
 
 The current version of `js-toolbelt` has one library (ValidNumber) with a set of useful functions. To enable
-them just use the `require` as shown below:
+them, just use the `require` as shown below:
 
 ## ValidNumber Library
 
@@ -23,14 +28,16 @@ var vn = require('js-toolbelt').ValidNumber;
 
 ### Numeric Functions
 
-`__vn.isNumeric(fieldToCheck)__`
+`vn.isNumeric(fieldToCheck)`
+
 Checks the fieldToCheck argument and returns true if it owns only number, otherwise returns false
 ```js
 console.log(vn.isNumeric('12345'));     // true
 console.log(vn.isNumeric('abc12345'));  // false
 ```
 
-`__vn.returnOnlyNumber(fieldToModify)__`
+`vn.returnOnlyNumber(fieldToModify)`
+
 Returns only numbers from the fieldToModify argument
 ```js
 console.log('abc123/4-5'); //12345
@@ -40,8 +47,10 @@ console.log(vn.returnOnlyNumbers('02.934.311/0001-53'));  // '02934311000153'
 
 ### Documents Functions
 
-`__vn.isCnpj(cnpjToCheck)__`
+`vn.isCnpj(cnpjToCheck)`
+
 Checks if the cnpj number is a valid document, if yes return true, otherwise, false.
+
 _P.S. cnpj is the main and only registration number of a company in Brazil, valid in national territory,
 has its own format and verification code._
 ```js
@@ -53,8 +62,10 @@ console.log(vn.isCnpj(''));                                       // false
 console.log(vn.isCnpj());                                         // false
 ```
 
-`__vn.returnCnpjWithMask(cnpj)__`
+`vn.returnCnpjWithMask(cnpj)`
+
 Return the cnpj with a valid mask (99.999.999/9999-99)
+
 _P.S. cnpj is the main and only registration number of a company in Brazil, valid in national territory,
 has its own format and verification code._
 ```js
@@ -64,9 +75,11 @@ console.log(vn.returnCnpjWithMask('12934311000153'));         // false (is an in
 console.log(vn.returnCnpjWithMask('abc'));                    // false
 ```
 
-`__vn.generateCnpj(withMask)__`
+`vn.generateCnpj(withMask)`
+
 Returns a valid cnpj number (but fake). If the withMask argument is true, cnpj will returned in its default
 format (02.934.311/0001-53), otherwise, it returns only numbers (02934311000153)
+
 _P.S. cnpj is the main and only registration number of a company in Brazil, valid in national territory,
 has its own format and verification code._
 ```js
@@ -78,7 +91,8 @@ console.log(vn.generateCnpj(true).length);  // 18 : length with mask (99.999.999
 
 ### Others Functions
 
-`__vn.validateObjectId(ObjectId)__`
+`vn.validateObjectId(ObjectId)`
+
 Return true if the ObjectId argument is a valid ObjectId for MongoDB.
 ```js
 console.log(vn.isObjectId('58835cf81490ba3ac4898f5e')); // true);
@@ -87,7 +101,7 @@ console.log(vn.isObjectId('abcdefghijklmnopqrstuvx'));  // false);
 ```
 
 
-## Authors
+## Author
 
  - Rick Biruel [@RicardoBiruel]
 
