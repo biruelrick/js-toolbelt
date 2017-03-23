@@ -4,7 +4,7 @@
   "description": "Day by day JavaScript's Common Functions",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
